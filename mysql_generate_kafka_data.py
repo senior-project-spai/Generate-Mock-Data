@@ -1,6 +1,7 @@
 import json
 import time
 import random
+import os
 from kafka import KafkaProducer
 
 KAFKA_HOST = os.environ['KAFKA_HOST']
