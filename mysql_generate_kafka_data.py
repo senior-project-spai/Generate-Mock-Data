@@ -22,7 +22,7 @@ def main():
             'position_bottom':random.randint(0,500)+random.randint(0,500),
         }
         print(mock_data)
-        producer.send('KAFKA_TOPIC_OUTPUT', mock_data)
+        producer.send(KAFKA_TOPIC_OUTPUT, mock_data)
         sleep_time = random.uniform(0,10)
         time.sleep(sleep_time)
         print("Sleep: " + str(sleep_time))
