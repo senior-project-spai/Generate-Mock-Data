@@ -17,11 +17,11 @@ def resultsGenerator(n):
             {
                 'gender': {
                     'gender': random.choice(['Male', 'Female']),
-                    'accuracy': random.random(),
+                    'confident': random.random(),
                 },
                 'race': {
                     'race': random.choice(['Asian', 'White', 'Black']),
-                    'accuracy': random.random(),
+                    'confident': random.random(),
                 },
                 'top': random.randint(0, 500),
                 'right': random.randint(0, 500),
@@ -38,7 +38,7 @@ def main():
 
     while True:
         mock_data = {
-            'time': time.strftime('%Y-%m-%d %H:%M:%S', time.gmtime()),
+            'time': int(time.time()),
             'Gender': random.choice(['Male', 'Female']),
             'Race': random.choice(['Asian', 'White', 'Black']),
             'position_top': random.randint(0, 500),
