@@ -17,11 +17,11 @@ def resultsGenerator(n):
             {
                 'gender': {
                     'gender': random.choice(['Male', 'Female']),
-                    'accuracy': '',
+                    'accuracy': random.random(),
                 },
                 'race': {
                     'race': random.choice(['Asian', 'White', 'Black']),
-                    'accuracy': '',
+                    'accuracy': random.random(),
                 },
                 'top': random.randint(0, 500),
                 'right': random.randint(0, 500),
