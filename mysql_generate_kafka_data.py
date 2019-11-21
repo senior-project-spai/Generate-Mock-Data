@@ -50,7 +50,7 @@ def main():
         mock_data = {
             'results': resultsGenerator(random.randint(1, 5)),
             'filepath': 's3://face-image/' + ''.join(random.choice(string.ascii_lowercase) for i in range(10)) + "." + random.choice(['png', 'jpg']) + ".mock",
-            'time': time.strftime('%Y-%m-%d %H:%M:%S', time.gmtime()),
+            'time': int(time.time()),
             'branch_id': random.choice([1, 2, 3, 4, 5]),
             'camera_id': random.choice([1, 2, 3, 4, 5]),
         }
